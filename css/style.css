@@ -24,6 +24,9 @@ a {
 header .header {
   background-color: #ffffff;
 }
+header img:hover {
+  transform: scale(1) !important;
+}
 
 body {
   font-family: var(--gabriela-font-family);
@@ -32,6 +35,11 @@ body {
 nav {
   font-family: var(--secandary-font-family);
   padding-left: 4rem;
+}
+
+#navbarTogglerDemo02 .navbar-nav {
+  display: flex;
+  justify-content: end;
 }
 
 nav ul {
@@ -55,7 +63,7 @@ nav ul a {
 
 a:hover {
   color: var(--main-color) !important;
-  transition: color 0.2s ease-in-out 0s !important;
+  transition: color 0.2s ease-in-out !important;
 }
 
 nav ul .btnDoc:hover {
@@ -535,6 +543,10 @@ p {
   line-height: 1.5;
   color: var(--primary-title);
   transition: color 0.3s ease-in-out;
+}
+
+.the3-4pho .sec-the-4 img:hover {
+  transform: scale(1) !important;
 }
 
 .sem-theLast-dark-bg .team-title p  {
@@ -1385,13 +1397,17 @@ footer p {
 
 
 
-/* @media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) {
     header .header {
       background-color: #ffffff;
     }
   }
-
-  @media screen and (max-width: 767px) {
+  
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+      justify-content: end !important;
+}}
+  /* @media screen and (max-width: 767px) {
     header .header {  
       background-color: #ffffff;
     }

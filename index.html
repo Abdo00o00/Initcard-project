@@ -21,65 +21,53 @@
   <title>Project Test</title>
 </head>
 
-<body class="position-relative" >
+<body class="position-relative" > 
   <!-- start the navbar --- the first section -->
   <header class=" ">
     <!-- start navbar -->
-    <div class="header">
-      <nav
-        class="nav navbar px-5 py-3 d-flex justify-content-between align-items-center fixed-top bg-white p-3 mb-5 bg-body-tertiary">
-        <div class="forLogoIcon ms-5">
-          <a href="www.google.com">
-            <div class="logo-img">
-              <img src="photos/logoooooooooooooo.png" class="img-fluid" alt="logo" />
-            </div>
-          </a>
+    <div class="header ">
+      <nav class="nav navbar navbar-expand-lg bg-body-tertiary px-5 py-3 d-flex justify-content-between align-items-center fixed-top bg-white p-3 mb-5">
+        <div class="container-fluid d-flex justify-content-between">
+          <!-- logo -->
+            <a href="www.google.com" class="navbar-brand ms-5">
+              <div class="logo-img">
+                <img src="photos/logoooooooooooooo.png" class="img-fluid" alt="logo" />
+              </div>
+            </a>
+
+          <!-- button for mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- active class must be in one link no all liks -->
+          <div class=" collapse navbar-collapse " id="navbarTogglerDemo02">
+            <ul class=" navbar-nav my-2 my-lg-0 navbar-nav-scroll ">
+              <li class="nav-item  w-100 active"><a href="#" class="nav-link text-start text-nowrap " aria-current="page">Product Cards</a></li>
+              <li class="nav-item  w-100  "><a href="#" class="nav-link text-start text-nowrap ">Pricing Cards</a></li>
+              <li class="nav-item  w-100  "><a href="#" class="nav-link text-start text-nowrap ">Blog Cards</a></li>
+              <li class="nav-item  w-100  "><a href="#" class="nav-link text-start text-nowrap ">Team Cards</a></li>
+              <li class="nav-item  w-100   position-relative extra-list "><a class="nav-link text-start text-nowrap dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">others</a>
+                <ul
+                  class=" ps-3 list-group bg-white rounded-1 position-absolute shadow mb-5 rounded d-flex justify-content-start"
+                  style="width: 200px; height: 214px">
+                  <li class="list-group-item border-0 px-0 pt-3 w-100 text-start"><a href="#" class="text-decoration-none py-3 px-0">Services Cards</a></li>
+                  <li class="list-group-item border-0 px-0 pt-0 w-100 text-start"><a href="#" class="text-decoration-none py-3 px-0">Tables</a>        </li>
+                  <li class="list-group-item border-0 px-0 pt-0 w-100 text-start"><a href="#" class="text-decoration-none py-3 px-0">Demo</a>          </li>
+                  <li class="list-group-item border-0 px-0 pt-0 w-100 text-start"><a href="#" class="text-decoration-none py-3 px-0">Buy Now</a>       </li>
+                  <li class="list-group-item border-0 px-0 pt-0 w-100 text-start"><a href="#" class="text-decoration-none py-3 px-0">Features</a>      </li>
+                </ul>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="btn border btnDoc " type="submit" href="#">Documentation</a>
+              </li>
+            </ul>
+          </div>          
+          
         </div>
-        <!-- active class must be in one link no all liks -->
-        <div class="">
-          <ul class=" ">
-            <li class="active">
-              <a href="https://www.google.com">Product Cards</a>
-            </li>
-            <li class="">
-              <a href="https://www.google.com">Pricing Cards</a>
-            </li>
-            <li class="">
-              <a href="https://www.google.com">Blog Cards</a>
-            </li>
-            <li class="">
-              <a href="https://www.google.com">Team Cards</a>
-            </li>
-            <li class=" position-relative extra-list">
-              <a href="https://www.google.com">others</a>
-              <ul
-                class="ps-3 list-group bg-white rounded-1 position-absolute shadow mb-5 rounded d-flex justify-content-start"
-                style="width: 200px; height: 214px">
-                <li class="list-group-item border-0 px-0 pt-3 w-100 text-start">
-                  <a href="#" class="text-decoration-none py-3 px-0">Services Cards</a>
-                </li>
-                <li class="list-group-item border-0 px-0 pt-0 w-100 text-start">
-                  <a href="#" class="text-decoration-none py-3 px-0">Tables</a>
-                </li>
-                <li class="list-group-item border-0 px-0 pt-0 w-100 text-start">
-                  <a href="#" class="text-decoration-none py-3 px-0">Demo</a>
-                </li>
-                <li class="list-group-item border-0 px-0 pt-0 w-100 text-start">
-                  <a href="#" class="text-decoration-none py-3 px-0">Features</a>
-                </li>
-                <li class="list-group-item border-0 px-0 pt-0 w-100 text-start">
-                  <a href="#" class="text-decoration-none py-3 px-0">Buy Now</a>
-                </li>
-              </ul>
-            </li>
-            <li class="active">
-              <a class="btn border btnDoc" href="https://www.google.com">Documentation</a>
-            </li>
-          </ul>
-        </div>
+                  
+        
       </nav>
     </div>
-    <!-- end navbar -->
   </header>  
   <!-- end the navbar --- the first section -->
 
@@ -153,7 +141,7 @@
             <div class="col col-lg-3 col-md-4 col-sm-6  ">
               <div class="card position-relative rounded-3 border-0 shadow mb-5 bg-body-tertiary rounded">
                 <div class="overflow-hidden">
-                  <img src="photos/Brooklyn Simmons.png" class="card-img-top img-fluid" alt="..." />
+                  <img src="photos/teamx2.png" class="card-img-top img-fluid" alt="..." />
                 </div>
                 <ul class="z-1 team-social position-absolute top-0 end-0 text-center socialLinks">
                   <li class="single list-unstyled mt-3 rounded-circle">
@@ -176,7 +164,7 @@
             <div class="col  col-lg-3 col-md-4 col-sm-6 ">
               <div class="card position-relative rounded-3 border-0 shadow mb-5 bg-body-tertiary rounded">
                 <div class="overflow-hidden">
-                  <img src="photos/Brooklyn Simmons.png" class="card-img-top img-fluid" alt="..." />
+                  <img src="photos/teamx3.png" class="card-img-top img-fluid" alt="..." />
                 </div>
                 <ul class="z-1 team-social position-absolute top-0 end-0 text-center socialLinks">
                   <li class="single list-unstyled mt-3 rounded-circle">
@@ -199,7 +187,7 @@
             <div class="col  col-lg-3 col-md-4 col-sm-6">
               <div class="card position-relative rounded-3 border-0 shadow mb-5 bg-body-tertiary rounded">
                 <div class="overflow-hidden">
-                  <img src="photos/Brooklyn Simmons.png" class="card-img-top img-fluid" alt="..." />
+                  <img src="photos/teamx4.png" class="card-img-top img-fluid" alt="..." />
                 </div>
                 <ul class="z-1 team-social position-absolute top-0 end-0 text-center socialLinks">
                   <li class="single list-unstyled mt-3 rounded-circle">
@@ -254,7 +242,7 @@
           <div class="col col-lg-3 col-md-4 col-sm-6 ">
             <div class="card position-relative rounded-3 border-0 shadow mb-5 bg-body-tertiary">
               <div class="overflow-hidden">
-                <img src="photos/sectwo.jpg" class="card-img-top img-fluid" alt="..." />
+                <img src="photos/Gteam1.jpg" class="card-img-top img-fluid" alt="..." />
               </div>
               <div class="card-body bg-danger d-flex justify-content-center p-0">
                 <div class="bg-danger position-absolute d-flex flex-column moving-div">
@@ -282,7 +270,7 @@
           <div class="col col-lg-3 col-md-4 col-sm-6 ">
             <div class="card position-relative rounded-3 border-0 shadow mb-5 bg-body-tertiary">
               <div class="overflow-hidden">
-                <img src="photos/sectwo.jpg" class="card-img-top img-fluid" alt="..." />
+                <img src="photos/Gteam2.jpg" class="card-img-top img-fluid" alt="..." />
               </div>
               <div class="card-body bg-danger d-flex justify-content-center p-0">
                 <div class="bg-danger position-absolute d-flex flex-column moving-div">
@@ -310,7 +298,7 @@
           <div class="col col-lg-3 col-md-4 col-sm-6 ">
             <div class="card position-relative rounded-3 border-0 shadow mb-5 bg-body-tertiary">
               <div class="overflow-hidden">
-                <img src="photos/sectwo.jpg" class="card-img-top img-fluid" alt="..." />
+                <img src="photos/Gteam3.jpg" class="card-img-top img-fluid" alt="..." />
               </div>
               <div class="card-body bg-danger d-flex justify-content-center p-0">
                 <div class="bg-danger position-absolute d-flex flex-column moving-div">
@@ -400,7 +388,7 @@
           <div class="card border-0  col-lg-3 col-md-4 col-sm-6 ">
             <div class="  d-flex justify-content-center mt-5 mb-3">
               <div class="  " style="width: 92px; height: 92px">
-                <img src="photos/qqqq.png" class="card-img-top" alt="person" />
+                <img src="photos/Tuser2.png" class="card-img-top" alt="person" />
               </div>
             </div>
 
@@ -434,7 +422,7 @@
           <div class="card border-0  col-lg-3 col-md-4 col-sm-6 ">
             <div class=" d-flex justify-content-center mt-5 mb-3">
               <div class="  " style="width: 92px; height: 92px">
-                <img src="photos/qqqq.png" class="card-img-top" alt="person" />
+                <img src="photos/Tuser2.png" class="card-img-top" alt="person" />
               </div>
             </div>
 
@@ -473,7 +461,6 @@
 
 
     <!-- start section Expert Teamm --- the 6th section -->
-    <!-- here he need a maegin bottom for esch div -------------------------------------------------->
     <section class="Expert-Teamm">
       <div class="team-section container">
         <h2 class="my-5">Expert Team</h2>
@@ -482,7 +469,7 @@
         <div class="col-lg-4 col-md-6 col-sm-6 mar-2x">
           <div class=" team-member d-flex justify-content-center   position-relative">
             <div>
-              <img src="photos/team1x0.jpg" alt="Marvin Gardens" class="img-fluid" />
+              <img src="photos/team1x2.jpg" alt="Marvin Gardens" class="img-fluid" />
             </div>
             <div class="overlay bg-white position-absolute pt-2">
               <h3>
@@ -522,7 +509,7 @@
         <div class="col-lg-4 col-md-6 col-sm-6 mar-2x">
           <div class=" team-member  d-flex justify-content-center   position-relative">
             <div>
-              <img src="photos/team1x0.jpg" alt="Marvin Gardens" class="img-fluid" />
+              <img src="photos/team1x2.jpg" alt="Marvin Gardens" class="img-fluid" />
             </div>
             <div class="overlay bg-white position-absolute pt-2">
               <h3>
@@ -606,7 +593,7 @@
               <div class="bg-white p-3 rounded-1 text-center bg-white ">
                 <div class="overflow-hidden  position-relative ">
                   <div class="cover-img img-fluid" >
-                    <img src="photos/Eteam1.jpg" alt="img" class="img-fluid"   />
+                    <img src="photos/Eteam2.jpg" alt="img" class="img-fluid"   />
                   </div>
                   <div
                     class="text-start opacity-0 last-social d-flex flex-nowrap position-absolute top-0 start-0 end-0 bottom-0 justify-content-center z-2">
@@ -636,7 +623,7 @@
               <div class="bg-white p-3 rounded-1 text-center bg-white ">
                 <div class="overflow-hidden  position-relative ">
                   <div class="cover-img img-fluid" >
-                    <img src="photos/Eteam1.jpg" alt="img" class="img-fluid"   />
+                    <img src="photos/Eteam3.jpg" alt="img" class="img-fluid"   />
                   </div>
                   <div
                     class="text-start opacity-0 last-social d-flex flex-nowrap position-absolute top-0 start-0 end-0 bottom-0 justify-content-center z-2">
@@ -666,7 +653,7 @@
               <div class="bg-white p-3 rounded-1 text-center bg-white ">
                 <div class="overflow-hidden  position-relative ">
                   <div class="cover-img img-fluid" >
-                    <img src="photos/Eteam1.jpg" alt="img" class="img-fluid"   />
+                    <img src="photos/Eteam4.jpg" alt="img" class="img-fluid"   />
                   </div>
                   <div
                     class="text-start opacity-0 last-social d-flex flex-nowrap position-absolute top-0 start-0 end-0 bottom-0 justify-content-center z-2">
@@ -742,7 +729,7 @@
                 <div class="single-team h-cale text-center position-relative overflow-hidden rounded-1">
                   <div class="team-img">
                     <div class=" ">
-                      <img src="photos/team1x.jpg" alt="img" class="img-fluid" />
+                      <img src="photos/team2x.jpg" alt="img" class="img-fluid" />
                     </div>
                     <div class="team-caption position-absolute start-0 end-0 px-2">
                       <h3 class="mb-0 pb-0 pt-1">
@@ -820,7 +807,7 @@
                 <div class="single-team h-cale text-center position-relative overflow-hidden rounded-1">
                   <div class="team-img">
                     <div class=" ">
-                      <img src="photos/team1x.jpg" alt="img" class="img-fluid" />
+                      <img src="photos/team3x.jpg" alt="img" class="img-fluid" />
                     </div>
                     <div class="team-caption position-absolute start-0 end-0 px-2">
                       <h3 class="mb-0 pb-0 pt-1">
@@ -863,7 +850,7 @@
             <div class="col-xl-3 col-lg-4 col-md-6 g-col-6 pe-3 mb-4">
               <div class="single-team white-bg h-cale">
                 <div class="team-img overflow-hidden">
-                  <img src="photos/team1x.jpg" alt="img" class="img-fluid" />
+                  <img src="photos/jteam1.jpg" alt="img" class="img-fluid" />
                 </div>
                 <div class="team-caption bg-white text-start ps-3 pb-4">
                   <h3 class="text-start">
@@ -877,7 +864,7 @@
             <div class="col-xl-3 col-lg-4 col-md-6 g-col-6 pe-3 mb-4">
               <div class="single-team white-bg h-cale">
                 <div class="team-img overflow-hidden">
-                  <img src="photos/team1x.jpg" alt="img" class="img-fluid" />
+                  <img src="photos/jteam2.jpg" alt="img" class="img-fluid" />
                 </div>
                 <div class="team-caption bg-white text-start ps-3 pb-4">
                   <h3 class="text-start">
@@ -891,7 +878,7 @@
             <div class="col-xl-3 col-lg-4 col-md-6 g-col-6 pe-3 mb-4">
               <div class="single-team white-bg h-cale">
                 <div class="team-img overflow-hidden">
-                  <img src="photos/team1x.jpg" alt="img" class="img-fluid" />
+                  <img src="photos/jteam3.jpg" alt="img" class="img-fluid" />
                 </div>
                 <div class="team-caption bg-white text-start ps-3 pb-4">
                   <h3 class="text-start">
@@ -905,7 +892,7 @@
             <div class="col-xl-3 col-lg-4 col-md-6 g-col-6 pe-3 mb-4">
               <div class="single-team white-bg h-cale">
                 <div class="team-img overflow-hidden">
-                  <img src="photos/team1x.jpg" alt="img" class="img-fluid" />
+                  <img src="photos/jteam4.jpg" alt="img" class="img-fluid" />
                 </div>
                 <div class="team-caption bg-white text-start ps-3 pb-4">
                   <h3 class="text-start">
@@ -951,7 +938,33 @@
           <div class="col-lg-3 col-md-6 col-sm-6 mb-3 single-team ">
               <div class="team-img position-relative overflow-hidden">
                 <div class="overflow-hidden">
-                  <img src="photos/teamx4.png" alt="img" class="img-fluid" />
+                  <img src="photos/teamx2.png" alt="img" class="img-fluid" />
+                  <ul class="team-social w-100 list-unstyled position-absolute d-flex justify-content-evenly">
+                    <li class="single-list opacity-0">
+                      <a href="#"><i class="bi bi-facebook bg-white p-2 rounded-circle"></i></a>
+                    </li>
+                    <li class="single-list opacity-0">
+                      <a href="#"><i class="bi bi-instagram bg-white p-2 rounded-circle"></i></a>
+                    </li>
+                    <li class="single-list opacity-0">
+                      <a href="#"><i class="bi bi-twitter bg-white p-2 rounded-circle"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Social -->
+              </div>
+              <div class="team-caption mt-3">
+                <h3>
+                  <a href="#" class="title text-decoration-none text-white">Jesscia brown</a>
+                </h3>
+                <p class="pera text-white">Co Founder</p>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-3 single-team ">
+              <div class="team-img position-relative overflow-hidden">
+                <div class="overflow-hidden">
+                  <img src="photos/teamx3.png" alt="img" class="img-fluid" />
                   <ul class="team-social w-100 list-unstyled position-absolute d-flex justify-content-evenly">
                     <li class="single-list opacity-0">
                       <a href="#"><i class="bi bi-facebook bg-white p-2 rounded-circle"></i></a>
@@ -1003,33 +1016,7 @@
           <div class="col-lg-3 col-md-6 col-sm-6 mb-3 single-team ">
               <div class="team-img position-relative overflow-hidden">
                 <div class="overflow-hidden">
-                  <img src="photos/teamx4.png" alt="img" class="img-fluid" />
-                  <ul class="team-social w-100 list-unstyled position-absolute d-flex justify-content-evenly">
-                    <li class="single-list opacity-0">
-                      <a href="#"><i class="bi bi-facebook bg-white p-2 rounded-circle"></i></a>
-                    </li>
-                    <li class="single-list opacity-0">
-                      <a href="#"><i class="bi bi-instagram bg-white p-2 rounded-circle"></i></a>
-                    </li>
-                    <li class="single-list opacity-0">
-                      <a href="#"><i class="bi bi-twitter bg-white p-2 rounded-circle"></i></a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Social -->
-              </div>
-              <div class="team-caption mt-3">
-                <h3>
-                  <a href="#" class="title text-decoration-none text-white">Jesscia brown</a>
-                </h3>
-                <p class="pera text-white">Co Founder</p>
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-sm-6 mb-3 single-team ">
-              <div class="team-img position-relative overflow-hidden">
-                <div class="overflow-hidden">
-                  <img src="photos/teamx4.png" alt="img" class="img-fluid" />
+                  <img src="photos/teamx5.png" alt="img" class="img-fluid" />
                   <ul class="team-social w-100 list-unstyled position-absolute d-flex justify-content-evenly">
                     <li class="single-list opacity-0">
                       <a href="#"><i class="bi bi-facebook bg-white p-2 rounded-circle"></i></a>
@@ -1064,7 +1051,7 @@
 
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-5 single-team ">
                 <div class="team-img overflow-hidden position-relative">
-                  <img src="photos/team0x2.png" alt="img" class="img-fluid" />
+                  <img src="photos/team0x1.png" alt="img" class="img-fluid" />
                   <div class="team-caption position-absolute bg-transparent start-0 end-0 pt-3">
                     <span class="ps-5 pera position-relative text-center text-white">Creative derector</span>
                     <h3 class="ps-3 pb-3 text-start">
@@ -1118,7 +1105,7 @@
 
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-5 single-team ">
                 <div class="team-img overflow-hidden position-relative">
-                  <img src="photos/team0x2.png" alt="img" class="img-fluid" />
+                  <img src="photos/team0x3.png" alt="img" class="img-fluid" />
                   <div class="team-caption position-absolute bg-transparent start-0 end-0 pt-3">
                     <span class="ps-5 pera position-relative text-center text-white">Creative derector</span>
                     <h3 class="ps-3 pb-3 text-start">
@@ -1145,7 +1132,7 @@
 
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-5 single-team ">
                 <div class="team-img overflow-hidden position-relative">
-                  <img src="photos/team0x2.png" alt="img" class="img-fluid" />
+                  <img src="photos/team0x1.png" alt="img" class="img-fluid" />
                   <div class="team-caption position-absolute bg-transparent start-0 end-0 pt-3">
                     <span class="ps-5 pera position-relative text-center text-white">Creative derector</span>
                     <h3 class="ps-3 pb-3 text-start">
@@ -1181,7 +1168,7 @@
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 take-mar">
               <div class="single-team mb-80 text-center position-relative">
                 <div class="team-img overflow-hidden">
-                  <img src="photos/team30.png" alt="img" class="img-fluid" />
+                  <img src="photos/team10.png" alt="img" class="img-fluid" />
                 </div>
                 <div class="team-caption position-absolute w-100">
                   <span class="text-white pera">Master Barber</span>
@@ -1195,7 +1182,7 @@
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 take-mar">
               <div class="single-team mb-80 text-center position-relative">
                 <div class="team-img overflow-hidden">
-                  <img src="photos/team30.png" alt="img" class="img-fluid" />
+                  <img src="photos/team20.png" alt="img" class="img-fluid" />
                 </div>
                 <div class="team-caption position-absolute w-100">
                   <span class="text-white pera">Master Barber</span>
@@ -1261,7 +1248,7 @@
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4">
               <div class="single-team white-bg ">
                 <div class="team-img overflow-hidden">
-                  <img src="photos/teamxx1.png" alt="img" class="img-fluid" />
+                  <img src="photos/teamxx2.png" alt="img" class="img-fluid" />
                 </div>
                 <div class="team-caption text-start p-4 border border-top-0 border-1">
                   <h3 class="text-start">
@@ -1303,7 +1290,7 @@
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4">
               <div class="single-team white-bg ">
                 <div class="team-img overflow-hidden">
-                  <img src="photos/teamxx1.png" alt="img" class="img-fluid" />
+                  <img src="photos/teamxx2.png" alt="img" class="img-fluid" />
                 </div>
                 <div class="team-caption text-start p-4 border border-top-0 border-1">
                   <h3 class="text-start">
@@ -1330,7 +1317,7 @@
               <div class="single-team bg-white  text-center ">
                 <div class="team-img position-relative overflow-hidden">
                   <div class="overflow-hidden magic-div overflow-hidden ">
-                    <img src="photos/team2x.jpg" alt="img" class="img-fluid" />
+                    <img src="photos/team1x.jpg" alt="img" class="img-fluid" />
                   </div>
                   <div class="team-caption">
                     <!-- Social -->
@@ -1386,7 +1373,7 @@
               <div class="single-team bg-white  text-center ">
                 <div class="team-img position-relative overflow-hidden">
                   <div class="overflow-hidden magic-div overflow-hidden ">
-                    <img src="photos/team2x.jpg" alt="img" class="img-fluid" />
+                    <img src="photos/team3x.jpg" alt="img" class="img-fluid" />
                   </div>
                   <div class="team-caption">
                     <!-- Social -->
@@ -1498,7 +1485,7 @@
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4">
             <div class="single-team">
               <div class="team-img overflow-hidden">
-                <img src="photos/team1x01.jpg" alt="img" class="img-fluid" />
+                <img src="photos/team1x02.jpg" alt="img" class="img-fluid" />
               </div>
               <div class="team-caption text-center pb-3 mt-2">
                 <h3><a href="#" class="title text-decoration-none text-white">Joilam Smith</a></h3>
@@ -1522,7 +1509,7 @@
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4">
             <div class="single-team">
               <div class="team-img overflow-hidden">
-                <img src="photos/team1x01.jpg" alt="img" class="img-fluid" />
+                <img src="photos/team1x03.jpg" alt="img" class="img-fluid" />
               </div>
               <div class="team-caption text-center pb-3 mt-2">
                 <h3><a href="#" class="title text-decoration-none text-white">Joilam Smith</a></h3>
@@ -1546,7 +1533,7 @@
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ">
             <div class="single-team">
               <div class="team-img overflow-hidden">
-                <img src="photos/team1x01.jpg" alt="img" class="img-fluid" />
+                <img src="photos/team1x04.jpg" alt="img" class="img-fluid" />
               </div>
               <div class="team-caption text-center pb-3 mt-2">
                 <h3><a href="#" class="title text-decoration-none text-white">Joilam Smith</a></h3>
@@ -1715,12 +1702,13 @@
             </div>
   
           </div>
+          
           <div class="row ">
   
             <div class="col-lg-3 col-md-4 col-sm-6 mb-2">
               <div class="single-team text-center bg-white">
                 <div class="team-img-0 overflow-hidden position-relative">
-                  <img src="photos/Hteam2.jpg" alt="img" class="img-fluid "/>
+                  <img src="photos/Hteam1.jpg" alt="img" class="img-fluid "/>
                 </div>
                 <div class="team-caption position-relative">
                   <!-- Social -->
@@ -1758,7 +1746,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mb-2">
               <div class="single-team text-center bg-white">
                 <div class="team-img-0 overflow-hidden position-relative">
-                  <img src="photos/Hteam2.jpg" alt="img" class="img-fluid "/>
+                  <img src="photos/Hteam3.jpg" alt="img" class="img-fluid "/>
                 </div>
                 <div class="team-caption position-relative">
                   <!-- Social -->
@@ -1777,7 +1765,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mb-2">
               <div class="single-team text-center bg-white">
                 <div class="team-img-0 overflow-hidden position-relative">
-                  <img src="photos/Hteam2.jpg" alt="img" class="img-fluid "/>
+                  <img src="photos/Hteam4.jpg" alt="img" class="img-fluid "/>
                 </div>
                 <div class="team-caption position-relative">
                   <!-- Social -->
@@ -1797,86 +1785,86 @@
         </div>
   
         <div class="row sec-Warivo big-mar pb-5 ">
-            
-                  <div class="col-lg-3 take-mar col-md-4 col-sm-6  text-center">
-                          <div class="team-img  position-relative">
-                              <div class="overflow-hidden"><img src="photos/jteam3.jpg" alt="img" class="img-fluid"/></div>
-                              <div class="team-caption overflow-hidden position-absolute  start-0 end-0 bg-white mx-4 rounded-2 z-2">
-                                  <div class="cap pt-2 pb-4">
-                                      <h3><a href="#" class="title">Peter Bross</a></h3>
-                                      <p class="pera">CEO Of Warivo</p>
-                                 
-                                  <!-- Social -->
-                                  <ul class="team-social list-unstyled d-flex justify-content-center pt-4">
-                                    <li class="single-list "><a href="#"><i class="bi bi-instagram  rounded-2 bg-danger text-white p-2 me-2"></i></a></li>
-                                    <li class="single-list "><a href="#"><i class="bi bi-linkedin   rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
-                                    <li class="single-list "><a href="#"><i class="bi bi-youtube    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
-                                    <li class="single-list "><a href="#"><i class="bi bi-twitter    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                          </div>
+          
+          <div class="col-lg-3 take-mar col-md-4 col-sm-6  text-center">
+                  <div class="team-img  position-relative">
+                      <div class="overflow-hidden"><img src="photos/jteam1.jpg" alt="img" class="img-fluid"/></div>
+                      <div class="team-caption overflow-hidden position-absolute  start-0 end-0 bg-white mx-4 rounded-2 z-2">
+                          <div class="cap pt-2 pb-4">
+                              <h3><a href="#" class="title">Peter Bross</a></h3>
+                              <p class="pera">CEO Of Warivo</p>
+                          
+                          <!-- Social -->
+                          <ul class="team-social list-unstyled d-flex justify-content-center pt-4">
+                            <li class="single-list "><a href="#"><i class="bi bi-instagram  rounded-2 bg-danger text-white p-2 me-2"></i></a></li>
+                            <li class="single-list "><a href="#"><i class="bi bi-linkedin   rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
+                            <li class="single-list "><a href="#"><i class="bi bi-youtube    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
+                            <li class="single-list "><a href="#"><i class="bi bi-twitter    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
                   </div>
-            
-                  <div class="col-lg-3 take-mar col-md-4 col-sm-6  text-center">
-                          <div class="team-img  position-relative">
-                              <div class="overflow-hidden"><img src="photos/jteam3.jpg" alt="img" class="img-fluid"/></div>
-                              <div class="team-caption overflow-hidden position-absolute  start-0 end-0 bg-white mx-4 rounded-2 z-2">
-                                  <div class="cap pt-2 pb-4">
-                                      <h3><a href="#" class="title">Peter Bross</a></h3>
-                                      <p class="pera">CEO Of Warivo</p>
-                                 
-                                  <!-- Social -->
-                                  <ul class="team-social list-unstyled d-flex justify-content-center pt-4">
-                                    <li class="single-list "><a href="#"><i class="bi bi-instagram  rounded-2 bg-danger text-white p-2 me-2"></i></a></li>
-                                    <li class="single-list "><a href="#"><i class="bi bi-linkedin   rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
-                                    <li class="single-list "><a href="#"><i class="bi bi-youtube    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
-                                    <li class="single-list "><a href="#"><i class="bi bi-twitter    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                          </div>
+          </div>
+    
+          <div class="col-lg-3 take-mar col-md-4 col-sm-6  text-center">
+                  <div class="team-img  position-relative">
+                      <div class="overflow-hidden"><img src="photos/jteam2.jpg" alt="img" class="img-fluid"/></div>
+                      <div class="team-caption overflow-hidden position-absolute  start-0 end-0 bg-white mx-4 rounded-2 z-2">
+                          <div class="cap pt-2 pb-4">
+                              <h3><a href="#" class="title">Peter Bross</a></h3>
+                              <p class="pera">CEO Of Warivo</p>
+                          
+                          <!-- Social -->
+                          <ul class="team-social list-unstyled d-flex justify-content-center pt-4">
+                            <li class="single-list "><a href="#"><i class="bi bi-instagram  rounded-2 bg-danger text-white p-2 me-2"></i></a></li>
+                            <li class="single-list "><a href="#"><i class="bi bi-linkedin   rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
+                            <li class="single-list "><a href="#"><i class="bi bi-youtube    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
+                            <li class="single-list "><a href="#"><i class="bi bi-twitter    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
                   </div>
-            
-                  <div class="col-lg-3 take-mar col-md-4 col-sm-6  text-center">
-                          <div class="team-img  position-relative">
-                              <div class="overflow-hidden"><img src="photos/jteam3.jpg" alt="img" class="img-fluid"/></div>
-                              <div class="team-caption overflow-hidden position-absolute  start-0 end-0 bg-white mx-4 rounded-2 z-2">
-                                  <div class="cap pt-2 pb-4">
-                                      <h3><a href="#" class="title">Peter Bross</a></h3>
-                                      <p class="pera">CEO Of Warivo</p>
-                                 
-                                  <!-- Social -->
-                                  <ul class="team-social list-unstyled d-flex justify-content-center pt-4">
-                                    <li class="single-list "><a href="#"><i class="bi bi-instagram  rounded-2 bg-danger text-white p-2 me-2"></i></a></li>
-                                    <li class="single-list "><a href="#"><i class="bi bi-linkedin   rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
-                                    <li class="single-list "><a href="#"><i class="bi bi-youtube    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
-                                    <li class="single-list "><a href="#"><i class="bi bi-twitter    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                          </div>
+          </div>
+    
+          <div class="col-lg-3 take-mar col-md-4 col-sm-6  text-center">
+                  <div class="team-img  position-relative">
+                      <div class="overflow-hidden"><img src="photos/jteam3.jpg" alt="img" class="img-fluid"/></div>
+                      <div class="team-caption overflow-hidden position-absolute  start-0 end-0 bg-white mx-4 rounded-2 z-2">
+                          <div class="cap pt-2 pb-4">
+                              <h3><a href="#" class="title">Peter Bross</a></h3>
+                              <p class="pera">CEO Of Warivo</p>
+                          
+                          <!-- Social -->
+                          <ul class="team-social list-unstyled d-flex justify-content-center pt-4">
+                            <li class="single-list "><a href="#"><i class="bi bi-instagram  rounded-2 bg-danger text-white p-2 me-2"></i></a></li>
+                            <li class="single-list "><a href="#"><i class="bi bi-linkedin   rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
+                            <li class="single-list "><a href="#"><i class="bi bi-youtube    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
+                            <li class="single-list "><a href="#"><i class="bi bi-twitter    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
                   </div>
-            
-                  <div class="col-lg-3 mb-5 col-md-4 col-sm-6  text-center">
-                          <div class="team-img  position-relative">
-                              <div class="overflow-hidden"><img src="photos/jteam3.jpg" alt="img" class="img-fluid"/></div>
-                              <div class="team-caption overflow-hidden position-absolute  start-0 end-0 bg-white mx-4 rounded-2 z-2">
-                                  <div class="cap pt-2 pb-4">
-                                      <h3><a href="#" class="title">Peter Bross</a></h3>
-                                      <p class="pera">CEO Of Warivo</p>
-                                 
-                                  <!-- Social -->
-                                  <ul class="team-social list-unstyled d-flex justify-content-center pt-4">
-                                    <li class="single-list "><a href="#"><i class="bi bi-instagram  rounded-2 bg-danger text-white p-2 me-2"></i></a></li>
-                                    <li class="single-list "><a href="#"><i class="bi bi-linkedin   rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
-                                    <li class="single-list "><a href="#"><i class="bi bi-youtube    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
-                                    <li class="single-list "><a href="#"><i class="bi bi-twitter    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                          </div>
+          </div>
+    
+          <div class="col-lg-3 mb-5 col-md-4 col-sm-6  text-center">
+                  <div class="team-img  position-relative">
+                      <div class="overflow-hidden"><img src="photos/jteam4.jpg" alt="img" class="img-fluid"/></div>
+                      <div class="team-caption overflow-hidden position-absolute  start-0 end-0 bg-white mx-4 rounded-2 z-2">
+                          <div class="cap pt-2 pb-4">
+                              <h3><a href="#" class="title">Peter Bross</a></h3>
+                              <p class="pera">CEO Of Warivo</p>
+                          
+                          <!-- Social -->
+                          <ul class="team-social list-unstyled d-flex justify-content-center pt-4">
+                            <li class="single-list "><a href="#"><i class="bi bi-instagram  rounded-2 bg-danger text-white p-2 me-2"></i></a></li>
+                            <li class="single-list "><a href="#"><i class="bi bi-linkedin   rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
+                            <li class="single-list "><a href="#"><i class="bi bi-youtube    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
+                            <li class="single-list "><a href="#"><i class="bi bi-twitter    rounded-2 bg-danger text-white p-2 mx-2"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
                   </div>
+          </div>
   
   
         </div>
@@ -1885,7 +1873,7 @@
   
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4 single-team">
                   <div class="team-img overflow-hidden  position-relative">
-                      <img src="photos/kteam3.jpg" alt="img" class="img-fluid"/>
+                      <img src="photos/kteam1.jpg" alt="img" class="img-fluid"/>
                       <!-- Social -->
                           <ul class="team-social list-unstyled d-flex flex-column pt-4 position-absolute  top-0 bottom-0 z-1">
                             <li class="single-list my-2 opacity-0"><a href="#"><i class="bi bi-instagram  rounded-2 text-danger bg-white p-2 mx-4"></i></a></li>
@@ -1919,7 +1907,7 @@
   
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4 single-team">
                   <div class="team-img overflow-hidden  position-relative">
-                      <img src="photos/kteam3.jpg" alt="img" class="img-fluid"/>
+                      <img src="photos/kteam1.jpg" alt="img" class="img-fluid"/>
                       <!-- Social -->
                           <ul class="team-social list-unstyled d-flex flex-column pt-4 position-absolute  top-0 bottom-0 z-1">
                             <li class="single-list my-2 opacity-0"><a href="#"><i class="bi bi-instagram  rounded-2 text-danger bg-white p-2 mx-4"></i></a></li>
@@ -1936,7 +1924,7 @@
   
           <div class="col-lg-3 col-md-4 col-sm-6  single-team">
                   <div class="team-img overflow-hidden  position-relative">
-                      <img src="photos/kteam3.jpg" alt="img" class="img-fluid"/>
+                      <img src="photos/kteam4.jpg" alt="img" class="img-fluid"/>
                       <!-- Social -->
                           <ul class="team-social list-unstyled d-flex flex-column pt-4 position-absolute  top-0 bottom-0 z-1">
                             <li class="single-list my-2 opacity-0"><a href="#"><i class="bi bi-instagram  rounded-2 text-danger bg-white p-2 mx-4"></i></a></li>
@@ -1958,13 +1946,7 @@
 
 
 
-
-
-
-
-
-
-    <!-- start section 3 cards with hover  -->
+    <!-- start section 3 cards with hover  --- the 12th section -->
     <section class="sec-sem-theLast-dark-bg">
       <div class="sem-theLast-dark-bg container ">
 
@@ -2017,7 +1999,7 @@
 
               <div class="d-flex align-items-center">
                 <div class="team-img">
-                  <img src="photos/user1.jpg" alt="img" class="img-cover" />
+                  <img src="photos/user4.jpg" alt="img" class="img-cover" />
                 </div>
                 <div class="team-title text-start">
                   <span class="title font-600">Jason Morcal</span>
@@ -2048,7 +2030,7 @@
 
               <div class="d-flex align-items-center">
                 <div class="team-img">
-                  <img src="photos/user1.jpg" alt="img" class="img-cover" />
+                  <img src="photos/user7.jpg" alt="img" class="img-cover" />
                 </div>
                 <div class="team-title text-start">
                   <span class="title font-600">Jason Morcal</span>
@@ -2077,9 +2059,10 @@
         </div> 
       </div>
     </section>
-    <!-- end section 3 cards with hover  -->
+    <!-- end section 3 cards with hover --- the 12th section  -->
 
-    <!-- start section 3 cards without hover  -->
+
+    <!-- start section 3 cards without hover --- the 13th section  -->
     <section class="just-cards-information">
       <div class="team-style-seventeen container">
 
@@ -2151,7 +2134,7 @@
             <div class="single-team section-bg-two p-4 the-card rounded-2 ">
               <div class="team-caption">
                 <div class="footer-logo mb-4 mb-30 d-flex justify-content-star">
-                  <img src="photos/user1.jpg" alt="img" />
+                  <img src="photos/user7.jpg" alt="img" />
                 </div>
                 <p class="pear text-start text-white">
                   There are many variations of passages of Lorem Ipsui
@@ -2192,7 +2175,7 @@
             <div class="single-team section-bg-two p-4 the-card rounded-2 ">
               <div class="team-caption">
                 <div class="footer-logo mb-4 mb-30 d-flex justify-content-star">
-                  <img src="photos/user1.jpg" alt="img" />
+                  <img src="photos/user4.jpg" alt="img" />
                 </div>
                 <p class="pear text-start text-white">
                   There are many variations of passages of Lorem Ipsui
@@ -2232,8 +2215,9 @@
         </div>
       </div>
     </section>
-    <!-- end section 3 cards without hover  -->
+    <!-- end section 3 cards without hover --- the 13th section  -->
   </main>
+
 
   <!-- footer -->
   <!-- start footer -->
@@ -2279,7 +2263,7 @@
 
 
     <!--div for cursor  -->
-    <div id="dot" ></div>
+    <!-- <div id="dot" ></div> -->
 
 
 
